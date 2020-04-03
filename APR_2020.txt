@@ -23,10 +23,10 @@ CSS UI [*]
 	- document.querySelector('.class_name_here').style.<property_here>
 	- .querySelector queries the CSS selector
 	- And another function that closes
-Flexbox []
-Z-Index []
-CSS Properties: VW and VH []
-Parallax []
+Flexbox [!]
+Z-Index [!] 
+CSS Properties: VW and VH [*]
+Parallax [*]
 	# const parallax = document.getElementById("parallax");
 	# window.addEventListener("scroll", function() {
 	# let offset = window.pageYOffset;
@@ -36,4 +36,12 @@ Parallax []
 	- the content on the page
 Work GitHub Commit [*]
 Go For Bike Ride [*]
+Body Weight Exercises [*]
+
+APRIL_03_2020, FRIDAY
+*** Tell Whitney I Love Her []
+GitHub Commit []
+Browse CodePen []
+Browse Dribble []
+Go For Bike Ride []
 Body Weight Exercises []
