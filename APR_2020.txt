@@ -39,7 +39,7 @@ Go For Bike Ride [*]
 Body Weight Exercises [*]
 
 APRIL_03_2020, FRIDAY
-*** Tell Whitney I Love Her []
+*** Tell Whitney I Love Her [*]
 GitHub Commit []
 Browse CodePen []
 Browse Dribble []
