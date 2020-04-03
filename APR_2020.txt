@@ -6,7 +6,17 @@ Body Weight Exercises [*]
 
 APRIL_02_2020, THURSDAY
 ***Tell Whitney I Love Her [*]
-JQuery UI []
-Work GitHub Commit []
+JQuery UI [!] < NOT NECESSARY
+CSS UI [*]
+- Notes: onclick="openNavFunctionHere()"
+- document.getElementById('idHere').style.<property_here>
+- Function can also query two separate IDs, one for the nav, and another to set margins for the main content of the page 
+OR 
+- document.querySelector('.class_name_here').style.<property_here>
+- And another function that closes
+Flexbox []
+Z-Index []
+CSS Properties: VW and VH []
+Work GitHub Commit [*]
 Go For Bike Ride []
-Body Weight Exercises 
+Body Weight Exercises []
