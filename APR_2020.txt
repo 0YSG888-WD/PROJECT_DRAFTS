@@ -40,8 +40,25 @@ Body Weight Exercises [*]
 
 APRIL_03_2020, FRIDAY
 *** Tell Whitney I Love Her [*]
+GitHub Commit [*]
+Browse CodePen [*]
+Swiper API Study [!]
+Lazy Loading [!]
+Browse Dribble [!]
+Go For Bike Ride [!] SORE
+Body Weight Exercises [!] LAZY
+
+APRIL_04_2020, SATURDAY
+*** Tell Whitney I Love Her [*]
+GitHub Commit [*]
+Modularizing Studies [*]
+- Completed Redo_Tweets as a modularized project (sans Queries and Validations)
+AJAX [*]
+Bike Ride [*]
+Body Weight Exercises [*]
+
+APRIL_05_2020, SUNDAY
+*** Tell Whitney I Love Her [*]
 GitHub Commit []
-Browse CodePen []
-Browse Dribble []
-Go For Bike Ride []
+AJAX - Username Availability []
 Body Weight Exercises []
