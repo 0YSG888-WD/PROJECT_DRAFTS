@@ -59,6 +59,6 @@ Body Weight Exercises [*]
 
 APRIL_05_2020, SUNDAY
 *** Tell Whitney I Love Her [*]
-GitHub Commit []
+GitHub Commit [*]
 AJAX - Username Availability []
 Body Weight Exercises []
