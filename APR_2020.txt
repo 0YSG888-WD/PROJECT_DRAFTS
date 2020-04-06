@@ -60,5 +60,7 @@ Body Weight Exercises [*]
 APRIL_05_2020, SUNDAY
 *** Tell Whitney I Love Her [*]
 GitHub Commit [*]
-AJAX - Username Availability []
+AJAX - Username Availability [*]
+- That was annoying
+- Coding Dojo doesn't teach it very well
 Body Weight Exercises []
