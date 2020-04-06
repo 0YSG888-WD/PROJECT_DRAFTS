@@ -59,8 +59,17 @@ Body Weight Exercises [*]
 
 APRIL_05_2020, SUNDAY
 *** Tell Whitney I Love Her [*]
+*** Remind Whitney to Stretch and Drink Water! [*] [] [] []
 GitHub Commit [*]
 AJAX - Username Availability [*]
 - That was annoying
 - Coding Dojo doesn't teach it very well
-Body Weight Exercises []
+Body Weight Exercises [*]
+
+APRIL_06_2020, MONDAY
+*** Tell Whitney I Love Her [*]
+*** Remind Whitney to Stretch and Drink Water [*] [] [] []
+Github Commit []
+1700 Lecture []
+Monday Discussion []
+
