@@ -57,9 +57,20 @@ AJAX [*]
 Bike Ride [*]
 Body Weight Exercises [*]
 
+Week of APRIL_05_2020
+Coding Dojo HW Due this Week:
+- Wireframes
+	- Solo Project Proposal
+- Arrays
+	- To Do 1
+	- Min to Front 
+	- To Do 2
+- Strings and Associative Arrays
+	- To Do 1 
+
 APRIL_05_2020, SUNDAY
 *** Tell Whitney I Love Her [*]
-*** Remind Whitney to Stretch and Drink Water! [*] [] [] []
+*** Remind Whitney to Stretch and Drink Water! [*] [!] [!] [!]
 GitHub Commit [*]
 AJAX - Username Availability [*]
 - That was annoying
@@ -68,8 +79,26 @@ Body Weight Exercises [*]
 
 APRIL_06_2020, MONDAY
 *** Tell Whitney I Love Her [*]
-*** Remind Whitney to Stretch and Drink Water [*] [] [] []
-Github Commit []
-1700 Lecture []
-Monday Discussion []
+*** Remind Whitney to Stretch and Drink Water [*] [*] [!] [!]
+Github Commit [*]
+Monday Discussion [*]
+1700 Lecture [*]
+Learn how to create upload photos functions [!]
+Learn how to make pages for queries [!]
+- Javascript function?
 
+APRIL_07_2020, TUESDAY
+*** Tell Whitney I Love Her [*]
+*** Remind Whitney to Stretch and Drink Water [] [] [] []
+Github Commit []
+Arrays
+- To Do 1 []
+- Min To Front []
+- if Time:
+	- To Do 2 []
+Browse Dribbble []
+Browse CodePen []
+Brainstorm SUGAR ideas []
+- Famous people quotes, fill in figures with images of famous people 
+- Last slide is a filled in silhouette with "you" written above it
+- With registration form next to it
