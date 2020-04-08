@@ -89,16 +89,33 @@ Learn how to make pages for queries [!]
 
 APRIL_07_2020, TUESDAY
 *** Tell Whitney I Love Her [*]
-*** Remind Whitney to Stretch and Drink Water [] [] [] []
-Github Commit []
+*** Remind Whitney to Stretch and Drink Water [*] [] [] []
+Github Commit [*] [!] [!] [!]
 Arrays
-- To Do 1 []
-- Min To Front []
+- To Do 1 [*]
+- Min To Front [*]
 - if Time:
-	- To Do 2 []
-Browse Dribbble []
-Browse CodePen []
-Brainstorm SUGAR ideas []
+	- To Do 2 [!]
+	- Started but did not finish
+Browse Dribbble [!]
+Browse CodePen [!]
+	- Should have done these instead of ToDo2
+Brainstorm SUGAR ideas [*]
 - Famous people quotes, fill in figures with images of famous people 
 - Last slide is a filled in silhouette with "you" written above it
 - With registration form next to it
+BodyWeight Exercises [*]
+
+APRIL_08_2020, WEDNESDAY
+*** Tell Whitney I Love Her []
+*** Remind Whitney to Stretch and Drink Water [] [] [] []
+GitHub Commit []
+Arrays
+- ToDo2 []
+Strings
+- ToDoStrings []
+"SUGAR" 
+- Quotes []
+- Dribbble Artworks []
+- CodePen Styles maybe []
+Body Weight Exercises []
