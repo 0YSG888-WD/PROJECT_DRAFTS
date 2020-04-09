@@ -108,15 +108,30 @@ BodyWeight Exercises [*]
 
 APRIL_08_2020, WEDNESDAY
 *** Tell Whitney I Love Her [*]
-*** Remind Whitney to Stretch and Drink Water [*] [] [] []
+*** Remind Whitney to Stretch and Drink Water [*] [*] [] []
 GitHub Commit [*]
 1700 Lecture [*]
 Arrays
-- ToDo2 []
+- ToDo2 [*]
 Strings
-- ToDoStrings []
+- ToDoStrings [*]
 "SUGAR" 
+- Quotes [!]
+- Dribbble Artworks [!]
+- CodePen Styles maybe [!] < NO TIME
+Body Weight Exercises [!] < SORE
+
+APRIL_09_2020, THURSDAY
+*** Tell Whitney I Love Her []
+*** Remind Whitney to Stretch and Drink Water [] [] [] []
+GitHub Commit []
+"SUGAR"
+- Wireframe []
 - Quotes []
-- Dribbble Artworks []
-- CodePen Styles maybe []
-Body Weight Exercises []
+- Dribbble Artwork []
+- CodePen Styles []
+Meeting with Dev at 1600 []
+Singly Linked Lists
+- Fronts []
+- Contains []
+- Length []
