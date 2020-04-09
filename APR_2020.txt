@@ -107,9 +107,10 @@ Brainstorm SUGAR ideas [*]
 BodyWeight Exercises [*]
 
 APRIL_08_2020, WEDNESDAY
-*** Tell Whitney I Love Her []
-*** Remind Whitney to Stretch and Drink Water [] [] [] []
-GitHub Commit []
+*** Tell Whitney I Love Her [*]
+*** Remind Whitney to Stretch and Drink Water [*] [] [] []
+GitHub Commit [*]
+1700 Lecture [*]
 Arrays
 - ToDo2 []
 Strings
