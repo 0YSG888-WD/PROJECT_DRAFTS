@@ -122,16 +122,27 @@ Strings
 Body Weight Exercises [!] < SORE
 
 APRIL_09_2020, THURSDAY
-*** Tell Whitney I Love Her []
+*** Tell Whitney I Love Her [*]
+*** Remind Whitney to Stretch and Drink Water [*] [] [] []
+GitHub Commit [*]
+"SUGAR"
+- Wireframe [*]
+- Quotes [!]
+- Dribbble Artwork [!]
+- CodePen Styles [!]
+Meeting with Dev at 1600 [!] < MISSED IT, TIMED FOR EST.
+- Reschedule Meeting [*] < Next Wednesday at 1430
+Singly Linked Lists
+- Fronts [!]
+- Contains [!]
+- Length [!]
+
+APRIL_10_2020, FRIDAY
+*** Tell Whitney I Love Her [*]
 *** Remind Whitney to Stretch and Drink Water [] [] [] []
 GitHub Commit []
 "SUGAR"
-- Wireframe []
-- Quotes []
-- Dribbble Artwork []
-- CodePen Styles []
-Meeting with Dev at 1600 []
-Singly Linked Lists
-- Fronts []
-- Contains []
-- Length []
+- Dribbble Styles for Inspo []
+- CodePen Styles for Inspo []
+- Redesign layout elements of SUGAR []
+Body Weight Exercises []
