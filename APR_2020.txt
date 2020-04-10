@@ -140,9 +140,10 @@ Singly Linked Lists
 APRIL_10_2020, FRIDAY
 *** Tell Whitney I Love Her [*]
 *** Remind Whitney to Stretch and Drink Water [] [] [] []
-GitHub Commit []
+GitHub Commit [*]
 "SUGAR"
 - Dribbble Styles for Inspo []
 - CodePen Styles for Inspo []
 - Redesign layout elements of SUGAR []
+Compile Portfolio Inspirations
 Body Weight Exercises []
