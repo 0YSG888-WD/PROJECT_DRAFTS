@@ -1,0 +1,50 @@
+## MAY_01_2020, FRIDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [*] [*] [] []**
+- PLATFORM
+    - Friday Discussion [*]
+- LEARNER X
+    - Review Design [*]
+    - Look Machine Learning Information [*]
+- RESUME
+    - Redo [!]
+
+## MAY_02_2020, SATURDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- RESUME
+    - Redo [*]
+- GITHUB
+    - Create Repos for SUGAR and LEARNERX [*] [!]
+    - High Level README.md [*] [!]
+    - Embed Pictures into README.md [*] [!]
+- LINKEDIN
+    - Look for people to make connections []
+    - Try to make connections []
+    - Redo About Me and Skills []
+
+## MAY_03_2020, SUNDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- RESUME
+    - Review Changes [*]
+- GITHUB
+    - Create Repo for LeanerX [!]
+    - High level README.md [!]
+    - Embed GIFs into README.md [!]
+- LINKED IN
+    - Look for people to make connections [!]
+    - Try to make connections [!]
+    - Redo About me and Skills [!]
+- LEARNERX
+    - Add Info to all Slides [!]
+    - Add animation to info [!]
+    - Start Making Individual Layers for Brain image to flash opacity [!]
+- TOOK A DAY OFF
+
+## MAY_04_2020, MONDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- LEARNER X
+    - Complete as much CSS extras as possible today []
+
