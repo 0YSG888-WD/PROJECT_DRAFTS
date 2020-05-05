@@ -44,7 +44,28 @@
 
 ## MAY_04_2020, MONDAY
 - **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [*] [] [] []**
+- LEARNER X
+    - Complete as much CSS extras as possible today [!]
+    - Ended up doing research on other front end utilities and tools
+CSS
+    - scrollmagic
+    - tweenmax
+    - timelinemax
+    - scrollmagic gsap animation plugin
+    - NEUINDEX check out javascript []
+        - greensock
+    - webGL
+    - susy grid styles
+    - 3js, pixiJS
+    - webpack, parcel
+    - animating before and after elements
+
+## MAY_05_2020, TUESDAY
+- **Tell Whitney I Love Her [*]**
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - LEARNER X
-    - Complete as much CSS extras as possible today []
-
+    - Think of additional style elements to implement
+- PORTAL
+    - Turn in Resume []
+    - Turn in Project []
