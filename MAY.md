@@ -65,7 +65,31 @@ CSS
 - **Tell Whitney I Love Her [*]**
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - LEARNER X
-    - Think of additional style elements to implement
+    - Think of additional style elements to implement [*]
+    - DONE AND COMPLETED [*]
 - PORTAL
-    - Turn in Resume []
-    - Turn in Project []
+    - Turn in Resume [*]
+    - Turn in Project [*]
+
+## MAY_06_2020, WEDNESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Homework [] []**
+- LEARNER X
+    - Review Design []
+    - Modularize CSS / JS for entire Project []
+CAREER
+    - Review Resume []
+    - GitHub
+        - Create Hub for LearnerX []
+        - Create Gifs for LearnerX []
+        - Recreate Gifs for Sugar []
+    - LinkedIn
+        - About Me
+        - Skills
+        - Title
+    - Networking
+        - Look at portfolios of admired developers and try to connect with them
+        - TJ
+    - Other
+        - IDK
