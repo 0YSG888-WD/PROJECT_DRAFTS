@@ -76,20 +76,44 @@ CSS
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Homework [] []**
 - LEARNER X
-    - Review Design []
-    - Modularize CSS / JS for entire Project []
+    - Review Design [*]
+    - Modularize CSS / JS for entire Project [*]
+        - GOD TAHT WAS ANNOYING
 CAREER
-    - Review Resume []
+    - Review Resume [*]
     - GitHub
-        - Create Hub for LearnerX []
-        - Create Gifs for LearnerX []
-        - Recreate Gifs for Sugar []
+        - Create Hub for LearnerX [*]
+        - Create Gifs for LearnerX [*]
+            - Partially done up to predictor:index
+        - Recreate Gifs for Sugar [!]
+            - Not sure I need to do this
     - LinkedIn
-        - About Me
-        - Skills
-        - Title
+        - About Me [!]
+        - Skills [!]
+        - Title [!]
     - Networking
-        - Look at portfolios of admired developers and try to connect with them
-        - TJ
+        - Look at portfolios of admired developers and try to connect with them []!
+        - TJ [!]
     - Other
         - IDK
+
+## MAY_06_2020, WEDNESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Homework [] []**
+- LEARNER X
+    - Review design [*]
+- CAREER
+    - GitHub
+        - Review [*]
+        - SUGAR descriptions [*]
+    - LinkedIn
+        - About Me [*]
+        - Skills [*]
+        - Title [*]
+        - **Send 5 connection requests [*]**
+    - Networking 
+        - Find LinkedIn for developers [*]
+        - TJ []
+- GRADUTION
+    - Graduate [*]
