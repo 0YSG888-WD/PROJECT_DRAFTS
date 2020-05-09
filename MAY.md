@@ -97,7 +97,7 @@ CAREER
     - Other
         - IDK
 
-## MAY_06_2020, WEDNESDAY
+## MAY_07_2020, THURSDAY
 - **Tell Whitney I Love Her [*]**
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Homework [] []**
@@ -117,3 +117,34 @@ CAREER
         - TJ []
 - GRADUTION
     - Graduate [*]
+
+## MAY_08_2020, FRIDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Homework [] []**
+- ALGOEXPERT
+    - PROBLEM 1 [*]
+    - PROBLEM 2 []
+    - PROBLEM 3 []
+    - At end of day:
+        - Redo All Problems for extra practice []
+- NETWORKING
+    - **Send 5 connection requests [*]**
+- JOBS
+    - Look for Jobs []
+    - Web Design []
+    - Front End Engineer []
+    - Full-stack Python Engineer []
+- TECHNOLOGIES
+    - PHP
+    - NODE.js
+- THERAPY [*]
+
+CODING DOJO 4000
+WELLSFARGO 5000
+CHASE 1000
+CITI 1700
+COLLECTOR 1000
+
+TOTAL 12700
+BALANCE 2600
