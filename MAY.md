@@ -123,22 +123,35 @@ CAREER
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Homework [] []**
 - ALGOEXPERT
-    - PROBLEM 1 [*]
+    - Two Number Sum [*]
+    - Closest Value in BST [*]
+    - BST Construction [*]
+    - At end of day:
+        - Redo All Problems for extra practice [*]
+        - OH MY GOD THESE ARE SO HARD I'M HAVING TO LEARN SO MUCH
+- NETWORKING
+    - **Send 5 connection requests [!]**
+- JOBS
+    - Look for Jobs [!]
+    - Web Design [!]
+    - Front End Engineer [!]
+    - Full-stack Python Engineer [!]
+- TECHNOLOGIES
+    - PHP [!]
+    - NODE.js [!]
+- THERAPY [*]
+
+## MAY_09_2020, SATURDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Homework [] []**
+- ALGOEXPERT.io
+    - PROBLEM 1 []
     - PROBLEM 2 []
     - PROBLEM 3 []
     - At end of day:
         - Redo All Problems for extra practice []
-- NETWORKING
-    - **Send 5 connection requests [*]**
-- JOBS
-    - Look for Jobs []
-    - Web Design []
-    - Front End Engineer []
-    - Full-stack Python Engineer []
-- TECHNOLOGIES
-    - PHP
-    - NODE.js
-- THERAPY [*]
+
 
 CODING DOJO 4000
 WELLSFARGO 5000
