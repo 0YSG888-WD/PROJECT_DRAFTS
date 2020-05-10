@@ -146,12 +146,24 @@ CAREER
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Homework [] []**
 - ALGOEXPERT.io
-    - PROBLEM 1 []
+    - Three Number Sum [*]
+    - Smallest Difference [!]
+    - PROBLEM 3 [!]
+        
+## MAY_09_2020, SATURDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Spanish Homework [] []**
+- ALGOEXPERT.io
+    - Smallest difference []
     - PROBLEM 2 []
     - PROBLEM 3 []
     - At end of day:
-        - Redo All Problems for extra practice []
-
+        - Two Number Sum []
+        - Closest Value in BST []
+        - BST Construction []
+        - Three Number Sum []
+        - Smallest Difference []
 
 CODING DOJO 4000
 WELLSFARGO 5000
