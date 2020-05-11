@@ -150,20 +150,39 @@ CAREER
     - Smallest Difference [!]
     - PROBLEM 3 [!]
         
-## MAY_09_2020, SATURDAY
+## MAY_10_2020, SUNDAY
 - **Tell Whitney I Love Her [*]**
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Spanish Homework [] []**
 - ALGOEXPERT.io
-    - Smallest difference []
-    - PROBLEM 2 []
-    - PROBLEM 3 []
+    - Smallest difference [*]
+    - Move Element to End [*]
+    - Monotonic Array [*]
+    - At end of day:
+        - Two Number Sum [!]
+        - Closest Value in BST [!]
+        - BST Construction [!]
+        - Three Number Sum [!]
+        - Smallest Difference [!]
+        - Move Element to End [!]
+        - Monotonic Array [!]
+
+## MAY_11_2020, MONDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Spanish Homework [*] []**
+- ALGOEXPERT.io
+    - Spiral Traverse []
+    - Longest Peak []
+    - Problem Three []
     - At end of day:
         - Two Number Sum []
         - Closest Value in BST []
         - BST Construction []
         - Three Number Sum []
         - Smallest Difference []
+        - Move Element to End []
+        - Monotonic Array []
 
 CODING DOJO 4000
 WELLSFARGO 5000
