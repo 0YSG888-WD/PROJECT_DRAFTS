@@ -172,10 +172,10 @@ CAREER
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Spanish Homework [*] []**
 - ALGOEXPERT.io
-    - Spiral Traverse []
-    - Longest Peak []
-    - Problem Three []
-    - At end of day:
+    - Spiral Traverse [*]
+    - Longest Peak [*]
+    - Validate BST [!]
+    - To Reattempt:
         - Two Number Sum []
         - Closest Value in BST []
         - BST Construction []
@@ -184,8 +184,27 @@ CAREER
         - Move Element to End []
         - Monotonic Array []
 
+## MAY_12_2020, TUESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Spanish Homework [*] []**
+- ALGOEXPERT.io
+    - Validate BST []
+    - Nth Fibonacci []
+    - Product Sum []
+    - To Reattempt:
+        - Two Number Sum []
+        - Closest Value in BST []
+        - BST Construction []
+        - Three Number Sum []
+        - Smallest Difference []
+        - Move Element to End []
+        - Monotonic Array []
+        - Validate BST []
+
 CODING DOJO 4000
-WELLSFARGO 5000
+
+WELLSFARGO 4999
 CHASE 1000
 CITI 1700
 COLLECTOR 1000
