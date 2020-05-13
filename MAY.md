@@ -189,18 +189,18 @@ CAREER
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Spanish Homework [*] []**
 - ALGOEXPERT.io
-    - Validate BST []
-    - Nth Fibonacci []
-    - Product Sum []
-    - To Reattempt:
-        - Two Number Sum []
-        - Closest Value in BST []
-        - BST Construction []
-        - Three Number Sum []
-        - Smallest Difference []
-        - Move Element to End []
-        - Monotonic Array []
-        - Validate BST []
+    - Validate BST [*]
+    - Nth Fibonacci [*]
+    - Product Sum [*]
+    - Permutations [!] 
+
+## MAY_13_2020, WEDNESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Spanish Homework [*] []**
+- ALGOEXPERT.io
+    - Permutations []
+- HACKERRANK []
 
 CODING DOJO 4000
 
@@ -211,3 +211,5 @@ COLLECTOR 1000
 
 TOTAL 12700
 BALANCE 2600
+
+
