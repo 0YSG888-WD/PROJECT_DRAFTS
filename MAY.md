@@ -176,13 +176,13 @@ CAREER
     - Longest Peak [*]
     - Validate BST [!]
     - To Reattempt:
-        - Two Number Sum []
-        - Closest Value in BST []
-        - BST Construction []
-        - Three Number Sum []
-        - Smallest Difference []
-        - Move Element to End []
-        - Monotonic Array []
+        - Two Number Sum [!]
+        - Closest Value in BST [!]
+        - BST Construction [!]
+        - Three Number Sum [!]
+        - Smallest Difference [!]
+        - Move Element to End [!]
+        - Monotonic Array [!]
 
 ## MAY_12_2020, TUESDAY
 - **Tell Whitney I Love Her [*]**
@@ -199,8 +199,25 @@ CAREER
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Spanish Homework [*] []**
 - ALGOEXPERT.io
-    - Permutations []
-- HACKERRANK []
+    - Permutations [!]
+        - Taking a break from algoexpert to do hackerrank
+- HACKERRANK [*]
+
+## MAY_13_2020, WEDNESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney about Spanish Homework [] []**
+- DAY OFF [*]
+
+## MAY_13_2020, WEDNESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- HACKERRANK
+    - Just do it []
+- RESUME
+    - Edit with Duy's suggestions []
+- LinkedIn
+    - Message TJ back []
 
 CODING DOJO 4000
 
