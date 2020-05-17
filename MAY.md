@@ -203,30 +203,31 @@ CAREER
         - Taking a break from algoexpert to do hackerrank
 - HACKERRANK [*]
 
-## MAY_13_2020, WEDNESDAY
+## MAY_16_2020, THURSDAY
 - **Tell Whitney I Love Her [*]**
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - **Remind Whitney about Spanish Homework [] []**
 - DAY OFF [*]
 
-## MAY_13_2020, WEDNESDAY
+## MAY_15_2020, FRIDAY
 - **Tell Whitney I Love Her [*]**
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - HACKERRANK
-    - Just do it []
+    - Just do it [*]
 - RESUME
-    - Edit with Duy's suggestions []
+    - Edit with Duy's suggestions [!]
 - LinkedIn
-    - Message TJ back []
+    - Message TJ back [!]
 
-CODING DOJO 4000
+## MAY_16_2020, SATURDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- RESUME
+    - Edit with Duy's suggestions [*]
+- LinkedIn
+    - Message TJ back [*]
+        - Went nowhere saaaaaad oh well
 
-WELLSFARGO 4999
-CHASE 1000
-CITI 1700
-COLLECTOR 1000
-
-TOTAL 12700
-BALANCE 2600
-
-
+WELLS 4999
+CHASE 715
+CITI 999
