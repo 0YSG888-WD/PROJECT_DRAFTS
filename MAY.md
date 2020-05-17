@@ -227,8 +227,14 @@ CAREER
 - LinkedIn
     - Message TJ back [*]
         - Went nowhere saaaaaad oh well
+- HACKERRANK
+    - Just Do It
 
-
+## MAY_17_2020, SUNDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- PORTAL
+    - Django Course []
 
 WELLS 4999
 CHASE 715
