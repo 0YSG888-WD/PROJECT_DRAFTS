@@ -234,8 +234,10 @@ CAREER
 - **Tell Whitney I Love Her [*]**
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - PORTAL
-    - Django Course []
+    - Django Course [*]
+        - Completed up until the Database / ORM portion.
 
 WELLS 4999
 CHASE 715
 CITI 999
+
