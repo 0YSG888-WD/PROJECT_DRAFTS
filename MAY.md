@@ -237,6 +237,27 @@ CAREER
     - Django Course [*]
         - Completed up until the Database / ORM portion.
 
+## MAY_18_2020, MONDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- JOB APPLICATIONS
+    - Make Spreadsheet [*]
+    - Indeed [*]
+        - Created Indeed Resume
+    - Wrote Cover Letter [*]
+    - Applied to Four Jobs [*]
+
+## MAY_19_2020, TUESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- ALGOEXPERT.IO
+    - Node Depths [*]
+    - Permutations []
+- GREENSOCK
+    - Play with animations using TEST_PROJECT []
+- TIME COMPELXITY 
+    - Research [*]
+
 WELLS 4999
 CHASE 715
 CITI 999
