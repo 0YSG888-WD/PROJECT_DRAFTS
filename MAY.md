@@ -254,9 +254,15 @@ CAREER
     - Node Depths [*]
     - Permutations []
 - GREENSOCK
-    - Play with animations using TEST_PROJECT []
+    - Play with animations using TEST_PROJECT [*]
 - TIME COMPELXITY 
     - Research [*]
+
+## MAY_20_2020, WEDNESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- TEST_PROJECT
+    - Swiper / Greensock testing []
 
 WELLS 4999
 CHASE 715
