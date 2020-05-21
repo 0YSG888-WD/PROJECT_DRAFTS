@@ -262,7 +262,14 @@ CAREER
 - **Tell Whitney I Love Her [*]**
 - **Remind Whitney to Stretch and Drink Water [] [] [] []**
 - TEST_PROJECT
-    - Swiper / Greensock testing []
+    - Swiper / Greensock testing [*]
+
+## MAY_20_2020, WEDNESDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- TEST_PROJECT
+    - Try to create interesting web pages with fun animations []
+    - Draft Portfolio slides []
 
 WELLS 4999
 CHASE 715
