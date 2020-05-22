@@ -266,9 +266,10 @@ CAREER
 
 ## MAY_20_2020, WEDNESDAY
 - **Tell Whitney I Love Her [*]**
-- **Remind Whitney to Stretch and Drink Water [] [] [] []**
+- **Remind Whitney to Stretch and Drink Water [*] [] [] []**
 - TEST_PROJECT
-    - Try to create interesting web pages with fun animations []
+    - Try to create interesting web pages with fun animations [*]
+        - Cool Intro Animations Created [*]
     - Draft Portfolio slides []
 
 WELLS 4999
