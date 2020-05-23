@@ -287,7 +287,19 @@ CAREER
 - **Remind Whitney to Stretch and Drink Water [*] [] [] []**
 - COALITION TECHNOLOGIES
     - Skill Test [*]
-*
+
+## MAY_23_2020, SATURDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [*] [] [] []**
+- LINKEDIN
+    - Contact Yannis and _ 
+    - Freelance info and Career Advice 
+- DRIBBBLE
+    - Inspo []
+- AWWWARDS
+    - Inspo []
+- PORTFOLIO
+    - Brainstorm []
 
 
 WELLS 4999
