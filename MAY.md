@@ -272,6 +272,24 @@ CAREER
         - Cool Intro Animations Created [*]
     - Draft Portfolio slides []
 
+## MAY_21`_2020, THURSDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [*] [] [] []**
+- LINKEDIN
+    - Apply for Jobs [*]
+    - Coalition Technologies
+        - Cover Letter [*]
+        - Application [*]
+        - Skill Test [!]
+
+## MAY_22_2020, FRIDAY
+- **Tell Whitney I Love Her [*]**
+- **Remind Whitney to Stretch and Drink Water [*] [] [] []**
+- COALITION TECHNOLOGIES
+    - Skill Test [*]
+
+
+
 WELLS 4999
 CHASE 715
 CITI 999
