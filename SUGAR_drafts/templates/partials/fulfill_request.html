@@ -1,0 +1,29 @@
+<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script>
+    $(document).ready(function(){
+        $('#submit-fulfilled').click(function(){
+            var data = $('#fulfilled-form').serialize()
+            $.ajax({
+                method: "post",
+                url: "/create_fulfilled_request",
+                data: data
+            })
+            .done(function(){
+                window.location.href = '/request'
+            })
+        })
+    })
+</script>
+
+<form action="" id="fulfilled-form">
+    <select name="fulfiller_id">
+        <option defuault selected value="0">select a neighbor!</option>
+        {% for user in users_list %}
+        <option value={{user.id}}>{{user.username}}</option>
+        {% endfor %}
+    </select>
+    <input type="hidden" name="item_id" value="{{user_request.item_id}}">
+    <input type="hidden" name="requester_id" value="{{user_request.user_id}}">
+    <input type="hidden" name="message" value="{{user_request.message}}">
+    <a href="#" id="submit-fulfilled">submit</a>
+</form>

@@ -301,8 +301,3 @@ CAREER
 - PORTFOLIO
     - Brainstorm []
 
-
-WELLS 4999
-CHASE 715
-CITI 999
-

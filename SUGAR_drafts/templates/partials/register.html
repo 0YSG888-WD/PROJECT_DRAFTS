@@ -1,0 +1,91 @@
+<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script>
+    $(document).ready(function(){
+        $('#loginRequest').click(function(){
+            $.ajax({
+                url: "/login"
+            })
+            .done(function(res){
+                $('#loginOrRegistrationForm').html(res)
+            })
+        })
+        $('#register').click(function(){
+            var data = $('#registrationForm').serialize()
+            $.ajax({
+                method: "POST",
+                url: "/register_user",
+                data: data
+            })
+            .done(function(res){
+                console.log(data)
+                console.log(res)
+                if(res == "success"){
+                    window.location.href = '/dashboard'
+                }
+                $('#error_container').html(res)
+            })
+        })
+    })
+</script>
+<style>
+    :root {
+        --main-color: rgb(255,0,102);
+    }
+    .register-header > a {
+        color: var(--main-color);
+        font-size: 10rem;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+        transition: ease;
+    }
+    .register-header > a:hover {
+        color: bisque;
+    }
+    
+    #register-form-div {
+        display: flex;
+        align-content: flex-end;
+    }
+    .register-info {
+            text-align: left;
+            background-color: transparent;
+            border-style: none none solid none;
+            border-color: bisque;
+            border-width: 10px;
+            transition: 0.5s;
+            font-size: 20px;
+            color: var(--main-color);
+        }
+    .register-info:hover {
+            border-color: var(--main-color);
+        }
+    .register-info:focus {
+        outline: none;
+    }
+    #loginRequest {
+        color: var(--main-color);
+        font-size: 10rem;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+        position:relative;
+    }
+    .transform {
+        transition: transform 0.4s ease 0s, opacity 0.2s ease 0s;
+    }
+    .transform:hover  {
+        transform: translate(0px, -55px);
+    }
+</style>
+
+<form action="/register_user" method="post" id="registrationForm">
+    <h1 class="register-header"><a href="#" id="register">CREATE</a></h1>
+    <p><input class="register-info" type="text" name="email" placeholder="EMAIL" id=email>
+    <input class="register-info" type="text" name="username" placeholder="USERNAME"></p><br>
+    <p><input class="register-info" type="text" name="password" placeholder="PASSWORD">
+    <input class="register-info" type="text" name="confirm_password" placeholder="CONFIRM"></p><br>
+</form>
+<br>
+<p class="transform"><a href="#" id="loginRequest">BACK!</a></p>
+<div id="error_container"></div>

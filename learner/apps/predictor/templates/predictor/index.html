@@ -1,0 +1,116 @@
+{% extends 'user/base.html' %}
+{% block title %} Dashboard{% endblock %}
+{% block content %}
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'predictor/css/index.css' %}">
+    <script src="{% static 'predictor/script/index.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <img class="navigation" onclick="setDisplay()" src="{% static 'predictor/images/icon2.png' %}" alt="ROCKET_SHIP">
+    <div class="message2user fixed"></div>
+    <div class="main-info">
+        <div class="info-images">
+            <img class="image-one" src="{% static 'predictor/images/brain_grid.png' %}" alt="">
+            <img class="image-two" src="{% static 'predictor/images/human_grid.png' %}" alt="">
+            <img class="image-three" src="{% static 'predictor/images/shuttle_grid.png' %}" alt="">
+        </div>
+        <div class="slide slide-one">
+            <h1>WHAT IS MACHINE LEARNING?</h1>
+            <div class="info slide-one-info">
+                <p>Machine leanrning is the use of algorithms and statistics to find patterns in data.</p>
+            </div>
+        </div>
+        <div class="slide slide-two">
+            <h1>HOW IS IT APPLIED?</h1>
+            <div class="info slide-two-info">
+                <p>From Netflix to Instagram, algorithms utilize User data and browsing history to suggest television shows and movies, or advertisements and posts.</p>
+            </div>
+        </div>
+        <div class="slide slide-three">
+            <h1>WHAT IS THE FUTURE FOR AI?</h1>
+            <div class="info slide-three-info">
+                <p>Robotic bees will soon pollinate flowers around the world, and diagnosing patient illness may be removed from human error.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="fixed background-text hide-toggle">
+        <p>import pandas as pd</p>
+        <p>import numpy as np</p>
+        <p>import sklearn</p>
+        <p>from sklearn import linear_model</p>
+        <br>
+        <p>def predictor(files, first, second, third, size, separator):</p>
+        <p class="indentOne">data = pd.read_csv(files, sep=separator)</p>
+        <p class="indentOne">data = data[["G1", "G2", "G3", first, second, third]]</p>
+        <p class="indentOne">predict = "G3"</p>
+        <p class="indentOne">x = np.array(data.drop([predict], 1))</p>
+        <p class="indentOne">x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size=float(size))</p>
+        <p class="indentOne">linear = linear_model.LinearRegression()</p>
+        <p class="indentOne">linear.fit(x_train, y_train)</p>
+        <p class="indentOne">accuracy = linear.score(x_test, y_test)</p>
+        <p class="indentOne">print('Accuracy: ', accuracy)</p>
+        <p class="indentOne">print('Coefficient: \n', linear.coef_)</p>
+        <p class="indentOne">print('Intercept: \n', linear.intercept_)</p>
+        <p class="indentOne">predictions = linear.predict(x_test)</p>
+        <p class="indentOne">results = {</p>
+        <p class="indentTwo">"accuracy": accuracy, </p>
+        <p class="indentTwo">"coefficient": linear.coef_, </p>
+        <p class="indentTwo">"intercept": linear.intercept_,</p>
+        <p class="indentTwo">"predictions": predictions, </p>
+        <p class="indentTwo">"test": x_test, </p>
+        <p class="indentTwo">"predicted": y_test,</p>
+        <p class="indentOne">}</p>
+        <br>
+        <p class="indentOne">return results</p>
+    </div>
+    <div class="menu">
+        <div class="background-text">
+            <p>from django.conf.urls import url</p>
+            <p>from . import views</p>
+        </div>
+        <br>
+        <p>app_name = "navigation menu"</p>
+        <br>
+        <p>urlpatterns = [</p>
+        <a class="indentOne displayNewToggle" href="{% url 'predictor:new' %}">url(r'^new$', views.new, name="new predicion"),</a>
+        <br>
+        <a class="indentOne displayLogoutToggle" href="{% url 'user:logouts' %}">url(r'^logout$', views.show, name="logout user"),</a>
+    </div>
+    <br>
+    <div class="url-new">
+        <p>def create(request):</p>
+        <p class="indentOne">if request.method == "POST":</p>
+        <p class="indentTwo">form = LearnForm(request.POST, request.FILES)</p>
+        <br>
+        <p class="indentTwo">if form.is_valid():</p>
+        <p class="indentThree">prediction = predictor(request.FILES['file'], request.POST['first'], request.POST['second'], request.POST['third'], request.POST['size'], request.POST['separator'])</p>
+        <p class="indentThree">return show(request, prediction)</p>
+        <br>
+        <p class="indentOne">return redirect(reverse("predictor:new")) </p> 
+    </div>
+    <div class="url-logout">
+        <p>def logins(request):</p>
+        <p class="indentOne">if request.method == 'POST':</p>
+        <p class="indentTwo">username = request.POST['username']</p>
+        <p class="indentTwo">password = request.POST['password1']</p>
+        <br>
+        <p class="indentTwo">user = authenticate(request, username=username, password=password)</p>
+        <br>
+        <p class="indentTwo">if user is not None:</p>
+        <p class="indentThree">login(request, user)</p>
+        <p class="indentThree">return redirect(reverse("predictor:index"))</p>
+        <p class="indentTwo">else:</p>
+        <p class="indentThree">rmessages.info(request, "Username OR Password is incorrect")</p>
+        <p class="indentOne">return redirect(reverse("user:index"))</p>
+        <br>
+        <p>def logouts(request):</p>
+        <p class="indentOne">logout(request)</p>
+        <p class="indentOne">return redirect(reverse("user:index"))</p>
+    </div>
+</body>
+{% endblock %}

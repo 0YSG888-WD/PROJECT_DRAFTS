@@ -1,0 +1,164 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            var controller = new ScrollMagic.Controller();
+
+            const start = new TimelineMax();
+            start.from('.image-one', 1, {scale:20, rotation:"180_cw", ease:Power1.easeInOut});
+            start.from('.image-two', 2, {scale:0, rotation:"200_ccw", ease:Power4.easeInOut}, "=-0.7");
+            start.from('.image-three', 1.5, {scale:20, opacity:0, rotation:"400_cw", ease:Power2.easeIn}, "=-1.5")
+            start.from('.image-four', 3, {scale: 0, opacity:0, rotation:"320_ccw", ease:Power4.easeIn}, "=-2.2")
+            start.from('.section-one-info', 3, {scale:0.9, opacity:0}, "=-3.8");
+
+            const t1 = new TimelineMax();
+            t1.to('.section-two', 2, {css: {backgroundColor: "#000000"}});
+            t1.from('.section-two-info', .5, {y: 500, opacity: 0}, "=-1.2");
+
+            const t2 = new TimelineMax();
+            t2.to('.section-three', 1, {css: {backgroundColor: "#EEEEEE"}});
+            t2.from('.section-three-info', .5, {y: 500, opacity: 0});
+
+            var scene = new ScrollMagic.Scene({
+                triggerElement: ".section-two",
+                triggerHook: 0.5
+            })
+            .addIndicators({
+                    colorTrigger: "white",
+                    colorStart: "white",
+                    colorEnd: "white",
+                    indent: 5
+            })
+            .setTween(t1)
+            .addTo(controller);
+
+            var scene2 = new ScrollMagic.Scene({
+                triggerElement: ".section-three",
+                triggerHook: 0.5
+            })
+            .addIndicators()
+            .setTween(t2)
+            .addTo(controller);
+
+            window.addEventListener('scroll', function(e){
+                var scroll = window.pageYOffset;
+                const sectionOneInfo = document.querySelector('.section-one-info');
+                sectionOneInfo.style.top = 35 - (scroll * 0.09) + 'vh';
+                const imageOne = document.querySelector('.image-one');
+                imageOne.style.top = 7 - (scroll * 0.2) + 'vh';
+                const imageTwo = document.querySelector('.image-two');
+                imageTwo.style.bottom = 30 + (scroll * 0.5) + 'vh';
+                const imageThree = document.querySelector('.image-three');
+                imageThree.style.bottom = 0 + (scroll * 1.5) + 'vh';
+            })
+
+        });
+    </script>
+</head>
+<style>
+    html {
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(100vh);
+        scroll-snap-type: y mandatory;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: bisque;
+        height: 100%;
+        width: 100%;
+    }
+    section {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        scroll-snap-align: start;
+        overflow: hidden;
+    }
+    .section-one {
+        color: orange;
+    } 
+    .section-one-info {
+        position: absolute;
+        top: 35vh;
+        z-index: 2;
+    }
+    .section-one > .image-one {
+        width: 400px;
+        position: absolute;
+        left: 10vw;
+        top: 7vh;
+        transform: rotate(15deg);
+        z-index: 1;
+    } 
+    .section-one > .image-two {
+        width: 400px;
+        position: absolute;
+        right: 8.5vw;
+        bottom: 30vh;
+        transform: rotate(340deg);
+        z-index: -1;
+    }
+    .section-one > .image-three {
+        width: 400px;
+        position: absolute;
+        bottom: 0;
+        right: 28vw;
+        transform: rotate(5deg);
+        z-index: 0;
+    }
+    .section-one > .image-four {
+        width: 380px;
+        position: absolute;
+        top: 29vh;
+        left: 28vw;
+        transform: rotate(357deg);
+        z-index:-1
+    }
+    .section-two {
+        background-color: bisque;
+        color: white;
+    } 
+    .section-three {
+        background-color: black;
+        color: plum;
+        scroll-snap-align: end;
+    }
+    .section-three-info {
+        z-index: 1;
+    }
+</style>
+<body>
+
+    <div id="container">
+        <section class="section-one">
+            <h1 class="section-one-info">WHITNEY IS BEAUTIFUL</h1>
+            <img class="image-one" src="{% static 'css/images/image1.png' %}" alt="image one">
+            <img class="image-two" src="{% static 'css/images/image2.png' %}" alt="image two">
+            <img class="image-three" src="{% static 'css/images/image3.png' %}" alt="image three">
+            <img class="image-four" src="{% static 'css/images/image5.png' %}" alt="image four">
+        </section>
+        <section class="section-two">
+            <h1 class="section-two-info">WHITNEY IS BEAUTIFUL</h1>
+        </section>
+        <section class="section-three">
+            <h1 class="section-three-info">WHITNEY IS BEAUTIFUL</h1>
+        </section>
+    </div>
+
+</body>
+</html>
