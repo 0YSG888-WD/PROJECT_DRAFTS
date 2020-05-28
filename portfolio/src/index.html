@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+        <div class="test">
+            <canvas class="three-test"></canvas>
+        </div>
+
+
+        <section class="section-one">
+            <h1>WHITNEY IS BEAUTIFUL</h1>
+        </section>
+        <section class="section-two">
+            <h1>WHITNEY IS BEAUTIFUL</h1>
+        </section>
+        <section class="section-three">
+            <h1>WHITNEY IS BEAUTIFUL</h1>
+        </section>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+
+            console.log('WHITNEY IS BEAUTIFUL')
+
+            const scene = new THREE.Scene;
+
+            const canvas = document.querySelector('.canvas-test');
+
+            const renderer = new THREE.WebGLRenderer({canvas});
+            renderer.setSize =(window.innerWidth, window.innerHeight);
+
+            let fov = 75;
+            let aspect = 2;
+            let near = 0.1;
+            let far = 5;
+            const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+            camera.position.z = 2;
+
+            let geometry = new THREE.BoxGeometry( 1, 1, 1 );
+            let material = new THREE.MeshBasicMaterial({color: 0x0000ff});
+            const cube = new THREE.Mesh(geometry, material)
+            scene.add(cube);
+
+            renderer.render(scene, camera);
+        });
+    </script>
+</body>
+</html>
