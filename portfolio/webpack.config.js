@@ -35,6 +35,10 @@ module.exports = {
                     "css-loader",
                     "sass-loader",
                 ]
+            },
+            {
+                test: /\.glsl$/i,
+                loader: 'webpack-glsl-loader'
             }
         ]
     },

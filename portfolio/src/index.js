@@ -1,33 +1,58 @@
 import './style/index.scss';
+import vertexShader from "./gl/vertex.glsl";
+import fragmentShader from "./gl/fragment.glsl";
+import img from './images/name.png';
 
 
 document.addEventListener("DOMContentLoaded", function(){
-
     console.log('WHITNEY IS BEAUTIFUL')
 
-    function main(){
-        const canvas = document.querySelector('.canvas-test');
-        const renderer = new THREE.WebGLRenderer({canvas});
+    const scene = new THREE.Scene();
+    const renderer = new THREE.WebGLRenderer({
+        alpha: true,
+        antialias: true,
+    });
+    renderer.setClearColor( 0xFF0000, 0 )
+    const canvas = document.getElementById("canvas");
+    const camera = new THREE.PerspectiveCamera(
+        45,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        100
+    );
+    const clock = new THREE.Clock();
+
+    function init(){
+        camera.position.z = 1;
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        canvas.appendChild(renderer.domElement);
     }
 
-    let fov = 75;
-    let aspect = 2;
-    let near = 0.1;
-    let far = 5;
-    const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    camera.position.z = 2;
+    const textureLoader = new THREE.TextureLoader();
+    const texture = textureLoader.load(img);
 
-    const scene = new THREE.Scene;
+    const geometry = new THREE.PlaneGeometry(0.8, 0.09, 60, 60);
+    const material = new THREE.ShaderMaterial({
+        uniforms: {
+            uTime: {value: 0.0},
+            uTexture: { value: texture }
+        },
+        vertexShader,
+        fragmentShader,
+        side: THREE.DoubleSide
+    });
+    const mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
 
-    let boxWidth = 1;
-    let boxHeight = 1;
-    let boxDepth = 1;
-    const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
-    let material = new THREE.MeshBasicMaterial({color: white});
+    function animation(){
+        material.uniforms.uTime.value = clock.getElapsedTime();
+    };
 
-    const cube = new THREE.Mesh(geometry, material)
-    
-    scene.add(cube);
-
-    renderer.render(scene, camera);
+    function render(){
+        animation();
+        renderer.render(scene, camera);
+        requestAnimationFrame(render);
+    }
+    init();
+    render();
 });
