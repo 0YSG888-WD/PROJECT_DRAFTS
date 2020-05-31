@@ -22,12 +22,11 @@ html {
 #canvas {
     position: fixed;
     top: 0;
-    z-index: 0;
+    z-index: -1;
     opacity: 0.9;
 }
 
 #container {
-
     section {
         display: flex;
         justify-content: center;
@@ -39,13 +38,44 @@ html {
 }
 
 .section-one {
+    .swiper-container {
+        height: 100vh;
+        width: 100vw;
+        z-index: 0;
+        mix-blend-mode: multiply;
+        .swiper-wrapper {
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .slide-two {
+                .slide-two-image-one {
+                    width: 35vw;
+                    height: auto;
+                    position: absolute;
+                    left: 15vw;
+                    mix-blend-mode: exclusion;
+                }
+                .slide-two-image-two {
+                    width: 50vw;
+                    height: auto;
+                    position: absolute;
+                    right: 5vw;
+                    bottom: 10vh;
+                    mix-blend-mode: difference;
+                }
+            }
+        }
+    }
+}
+
+.section-one {
     img {
         display: inline-block;
         position: absolute;
         height: 80vh;
         opacity: 0.9;
-        z-index: 0;
-        mix-blend-mode: multiply;
     }
     .about {
         position: absolute;
@@ -57,7 +87,6 @@ html {
         font-size: 3rem;
         mix-blend-mode: exclusion;
         opacity: 0.9;
-        
         p {
             display: inline-block;
         }

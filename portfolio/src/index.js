@@ -55,4 +55,11 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     init();
     render();
+
+    var mySwiper = new Swiper('.swiper-container', { 
+        direction: 'horizontal',
+        loop: true,
+        mousewheel: true,
+        speed: 900,
+     });
 });

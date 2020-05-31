@@ -5,14 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 <body>
     <div id="canvas"></div>
     <div id="container">
 
         <section class="section-one">
-            <div id="canvas"></div>
-            <img src="assets/image1.gif" alt="">
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-one">  
+                        <img src="assets/image1.gif" alt="">
+                    </div>
+                    <div class="swiper-slide slide-two">  
+                        <img class="slide-two-image-two" src="assets/car2.jpeg" alt="">
+                        <img class="slide-two-image-one" src="assets/car1.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide slide-three">  
+                        <img src="assets/image2.png" alt="">
+                    </div>
+                </div>
+
+            </div>
             <div class="about">
                 <p class="line-one">PYTHON DEVELOPER</p><br>
                 <p class="line-two">FRONT-END DESIGN</p><br>
@@ -20,11 +37,6 @@
                 <p class="line-four">DIGITAL ARTIST</p>
             </div>
         </section>
-
-        <section class="section-two">
-            <h1>WHITNEY IS BEAUTIFUL</h1>
-        </section>
-
     </div>
 
 </body>
