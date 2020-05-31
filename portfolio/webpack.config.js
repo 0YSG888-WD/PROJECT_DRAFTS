@@ -39,6 +39,10 @@ module.exports = {
             {
                 test: /\.glsl$/i,
                 loader: 'webpack-glsl-loader'
+            },
+            {
+                test: /\.obj$/i,
+                loader: 'webpack-obj-loader'
             }
         ]
     },

@@ -1,7 +1,7 @@
 import './style/index.scss';
 import vertexShader from "./gl/vertex.glsl";
 import fragmentShader from "./gl/fragment.glsl";
-import img from './images/name.png';
+import img from './assets/name.png';
 
 
 document.addEventListener("DOMContentLoaded", function(){
