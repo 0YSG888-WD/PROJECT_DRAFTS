@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function(){
     function animation(){
         material.uniforms.uTime.value = clock.getElapsedTime();
     };
-
     function render(){
         animation();
         renderer.render(scene, camera);
@@ -60,6 +59,11 @@ document.addEventListener("DOMContentLoaded", function(){
         direction: 'horizontal',
         loop: true,
         mousewheel: true,
+        mousewheel: {
+            forceToAxis: true,
+            invert: true
+        },
+        spaceBetween: 0,
         speed: 900,
      });
 });

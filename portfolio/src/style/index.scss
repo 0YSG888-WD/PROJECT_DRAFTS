@@ -15,6 +15,9 @@ html {
     body {
         height: 100%;
         width: 100%;
+        font-family: helvetica;
+        font-weight: bold;
+        font-style: italic;
     }
 
 }
@@ -26,14 +29,31 @@ html {
     opacity: 0.9;
 }
 
+.frame {
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    color: white;
+    font-size: 2rem;
+    font-family: 'DM Serif Text', serif;
+    font-style: normal;
+    transform: skew(15deg);
+    opacity: 0.2;
+    mix-blend-mode: exclusion;
+    line-height: 1.5rem;
+    .up-and-down {
+        font-size: 1.85rem;
+    }
+}
+
 #container {
     section {
         display: flex;
         justify-content: center;
         align-items: center;
-        scroll-snap-align: start;
         height: 100vh;
         width: 100vw;
+        scroll-snap-align: start;
     }
 }
 
@@ -50,19 +70,45 @@ html {
                 align-items: center;
             }
             .slide-two {
+                .slide-two-info {
+                    position: absolute;
+                    left: 3vw;
+                    bottom: 5vh;
+                    font-size: 1rem;
+                    opacity: 0.5;
+                }
                 .slide-two-image-one {
-                    width: 35vw;
-                    height: auto;
                     position: absolute;
                     left: 15vw;
+                    height: auto;
+                    width: 35%;
                     mix-blend-mode: exclusion;
                 }
                 .slide-two-image-two {
-                    width: 50vw;
-                    height: auto;
                     position: absolute;
                     right: 5vw;
                     bottom: 10vh;
+                    height: auto;
+                    width: 50%;
+                    text-align: right;
+                    mix-blend-mode: difference;
+                }
+            }
+            .slide-three {
+                .slide-three-image-one {
+                    position: absolute;
+                    right: 22vw;
+                    top: 5vh;
+                    width: 35%;
+                    height: auto;
+                    mix-blend-mode: difference;
+                }
+                .slide-three-image-two {
+                    position: absolute;
+                    left: 12vw;
+                    bottom: 5vh;
+                    width: 35%;
+                    height: auto;
                     mix-blend-mode: difference;
                 }
             }
@@ -82,6 +128,7 @@ html {
         bottom: 8vh;
         right: 20vw;
         font-family: 'DM Serif Text', serif;
+        font-style: normal;
         font-weight: bold;
         transform: skew(-25deg);
         font-size: 3rem;
@@ -94,23 +141,59 @@ html {
             color: hotpink;
             cursor: default;
         }
+        line-height: 2.5rem;
+        .line-one {
+            font-size: inherit;
+        }
+        .line-two {
+            font-size: 3.21rem;
+        }
+        .line-three {
+            font-size: 4.47rem;
+            margin-top: 0.45rem;
+        }
+        .line-four {
+            font-size: 3.95rem;
+            margin-top: 0.26rem;
+        }
     }
 }
 
-.about {
-    line-height: 2.5rem;
-    .line-one {
-        font-size: inherit;
+.section-two {
+    .column {
+        width: 45vw;
+        img {
+            max-width: 96%;
+            margin: -2.5rem 0;
+            opacity: 0.99;
+            mix-blend-mode: difference;
+            z-index: 0;
+        }
     }
-    .line-two {
-        font-size: 3.21rem;
+    .section-two-image-one {
+        position: relative;
+        left: 4vw;
     }
-    .line-three {
-        font-size: 4.47rem;
-        margin-top: 0.45rem;
+    .section-two-image-two {
+        position: relative;
+        right: 2vw;
     }
-    .line-four {
-        font-size: 3.95rem;
-        margin-top: 0.26rem;
+}
+
+.section-two-info, .section-three-info {
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px rgba(0,0,20,0.6);
+    opacity: 0.9;
+    span {
+        font-family: 'DM Serif Text', serif;
+        opacity: 0.8;
+        color: royalblue;
+        font-size: 3.4rem;
+    }
+    a {
+        text-decoration: none;
+        font-family: 'DM Serif Text', serif;
+        color: royalblue;
+        transform: skew(15deg);
     }
 }
