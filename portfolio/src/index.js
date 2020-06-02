@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const sectionOneTimeline = gsap.timeline();
     sectionOneTimeline.to(".line-one", {opacity: 0, y: -25, delay: 0});
-    sectionOneTimeline.to(".line-two", {opacity: 0, y: -25,  delay: -0.1});
+    sectionOneTimeline.to(".line-two", {opacity: 0, y: -25,  delay: -0.09});
     sectionOneTimeline.to(".line-three", {opacity: 0, y: -25,  delay: -0.2});
     sectionOneTimeline.to(".line-four", {opacity: 0, y: -25,  delay: -0.3});
     const sectionOneScene = new ScrollMagic.Scene({
@@ -87,8 +87,6 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     .setTween(changeBackgroundTimeline)
     .addTo(controller);
-
-
 
     var mySwiper = new Swiper('.swiper-container', { 
         direction: 'horizontal',
