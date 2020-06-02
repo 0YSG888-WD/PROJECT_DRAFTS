@@ -55,6 +55,41 @@ document.addEventListener("DOMContentLoaded", function(){
     init();
     render();
 
+    const controller = new ScrollMagic.Controller({});
+
+    const canvasTimeline = gsap.timeline();
+    canvasTimeline.to(".left-and-right", {x: -600, delay: 0});
+    canvasTimeline.to(".up-and-down", {y: -100, delay: 0.2});
+    const canvasTimelineScene = new ScrollMagic.Scene({
+        triggerElement: ".section-two",
+        triggerHook: 0.99999
+    })
+    .setTween(canvasTimeline)
+    .addTo(controller);
+
+    const sectionOneTimeline = gsap.timeline();
+    sectionOneTimeline.to(".line-one", {opacity: 0, y: -25, delay: 0});
+    sectionOneTimeline.to(".line-two", {opacity: 0, y: -25,  delay: -0.1});
+    sectionOneTimeline.to(".line-three", {opacity: 0, y: -25,  delay: -0.2});
+    sectionOneTimeline.to(".line-four", {opacity: 0, y: -25,  delay: -0.3});
+    const sectionOneScene = new ScrollMagic.Scene({
+        triggerElement: ".section-two",
+        triggerHook: 0.999
+    })
+    .setTween(sectionOneTimeline)
+    .addTo(controller);
+
+    const changeBackgroundTimeline = gsap.timeline();
+    changeBackgroundTimeline.to("html", {backgroundColor:"rgb(10,0,0)", ease:Power4.easeIn});
+    const changeBackgroundScene = new ScrollMagic.Scene({
+        triggerElement: ".section-two",
+        triggerHook: 0.999
+    })
+    .setTween(changeBackgroundTimeline)
+    .addTo(controller);
+
+
+
     var mySwiper = new Swiper('.swiper-container', { 
         direction: 'horizontal',
         loop: true,
@@ -65,5 +100,6 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         spaceBetween: 0,
         speed: 900,
+        parallax: true
      });
 });
