@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function(){
     canvasTimeline.to(".up-and-down", {y: -100, delay: 0.2});
     const canvasTimelineScene = new ScrollMagic.Scene({
         triggerElement: ".section-two",
-        triggerHook: 0.99999
+        triggerHook: 0.95
     })
     .setTween(canvasTimeline)
     .addTo(controller);
@@ -74,13 +74,13 @@ document.addEventListener("DOMContentLoaded", function(){
     sectionOneTimeline.to(".line-four", {opacity: 0, y: -25,  delay: -0.3});
     const sectionOneScene = new ScrollMagic.Scene({
         triggerElement: ".section-two",
-        triggerHook: 0.999
+        triggerHook: 0.95
     })
     .setTween(sectionOneTimeline)
     .addTo(controller);
 
     const changeBackgroundTimeline = gsap.timeline();
-    changeBackgroundTimeline.to("html", {backgroundColor:"rgb(10,0,0)", ease:Power4.easeIn});
+    changeBackgroundTimeline.to("html", {backgroundColor:"rgb(11,0,0)", ease:Power4.easeIn});
     const changeBackgroundScene = new ScrollMagic.Scene({
         triggerElement: ".section-two",
         triggerHook: 0.999
@@ -88,6 +88,29 @@ document.addEventListener("DOMContentLoaded", function(){
     .setTween(changeBackgroundTimeline)
     .addTo(controller);
 
+    const sectionTwoTimeline = gsap.timeline();
+    sectionTwoTimeline.from(".column", {ease: "power1.out", y: 500, opacity: 0 });
+    sectionTwoTimeline.from(".section-two-image-two", {y: 500, delay: -0.5})
+    sectionTwoTimeline.from("span", {opacity: 0, x:200, ease: Power4.easeIn, delay: -0.75, stagger: {from: "start", amount: 2}});
+    const sectionTwoScene = new ScrollMagic.Scene({
+        triggerElement: ".section-two",
+        triggerHook: 0.5
+    })
+    .setTween(sectionTwoTimeline)
+    .addTo(controller);
+
+    const sectionTwoLeave = gsap.timeline();
+    sectionTwoLeave.to(".section-two-image-one", {y: -300, opacity: 0});
+    sectionTwoLeave.to(".section-two-image-two", {duration: 1, y: -600, opacity: 0, delay: -0.37});
+    sectionTwoLeave.from(".section-three-p", {opacity: 0, y: -25, stagger: {from: "start", amount: 1}, delay: -0.5})
+    const sectionTwoLeaveScene = new ScrollMagic.Scene({
+        triggerElement: ".section-three",
+        triggerHook: 0.99
+    })
+    .setTween(sectionTwoLeave)
+    .addTo(controller);
+
+    // SWIPER INIT
     var mySwiper = new Swiper('.swiper-container', { 
         direction: 'horizontal',
         loop: true,
