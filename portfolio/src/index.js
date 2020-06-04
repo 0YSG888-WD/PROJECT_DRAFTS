@@ -51,6 +51,12 @@ document.addEventListener("DOMContentLoaded", function(){
         renderer.render(scene, camera);
         requestAnimationFrame(render);
     }
+    function onResize(){
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+    window.addEventListener('resize', onResize, false);
     init();
     render();
     const controller = new ScrollMagic.Controller({});
@@ -98,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function(){
     sectionTwoLeave.from(".section-three-p", {opacity: 0, y: -25, stagger: {from: "start", amount: 1}, delay: -0.5})
     const sectionTwoLeaveScene = new ScrollMagic.Scene({
         triggerElement: ".section-three",
-        triggerHook: 0.99
+        triggerHook: 0.90
     })
     .setTween(sectionTwoLeave)
     .addTo(controller);

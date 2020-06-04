@@ -295,13 +295,17 @@ html {
 }
 @include responsive(phone){
     .section-two-info {
+        width: 80vw;
         position: relative;
         right: 40vw;
-        top: 30vh;
+        top: 25vh;
     }
 }
 .section-three-info {
     transform: skew(-15deg);
     font-style: normal;
     mix-blend-mode: exclusion;
+    @include responsive(phone){
+        transform: skew(0deg)
+    }
 }
