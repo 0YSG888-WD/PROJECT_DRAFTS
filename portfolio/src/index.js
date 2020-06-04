@@ -2,11 +2,14 @@ import './style/index.scss';
 import vertexShader from "./gl/vertex.glsl";
 import fragmentShader from "./gl/fragment.glsl";
 import img from './assets/name.png';
-
-
 document.addEventListener("DOMContentLoaded", function(){
-    console.log('WHITNEY IS BEAUTIFUL')
-
+    setTimeout(function(){
+        let loader = document.querySelector(".love");
+        loader.className += " hidden";
+    }, 1500);
+    document.getElementById("canvas").style.display = "inherit";
+    document.getElementById("container").style.display = "inherit";
+    console.log('WHITNEY IS BEAUTIFUL');
     const scene = new THREE.Scene();
     const renderer = new THREE.WebGLRenderer({
         alpha: true,
@@ -21,16 +24,13 @@ document.addEventListener("DOMContentLoaded", function(){
         100
     );
     const clock = new THREE.Clock();
-
     function init(){
         camera.position.z = 1;
         renderer.setSize(window.innerWidth, window.innerHeight);
         canvas.appendChild(renderer.domElement);
     }
-
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(img);
-
     const geometry = new THREE.PlaneGeometry(0.8, 0.09, 60, 60);
     const material = new THREE.ShaderMaterial({
         uniforms: {
@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function(){
     });
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
-
     function animation(){
         material.uniforms.uTime.value = clock.getElapsedTime();
     };
@@ -54,9 +53,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     init();
     render();
-
     const controller = new ScrollMagic.Controller({});
-
     const canvasTimeline = gsap.timeline();
     canvasTimeline.to(".left-and-right", {x: -600, delay: 0});
     canvasTimeline.to(".up-and-down", {y: -100, delay: 0.2});
@@ -66,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     .setTween(canvasTimeline)
     .addTo(controller);
-
     const sectionOneTimeline = gsap.timeline();
     sectionOneTimeline.to(".line-one", {opacity: 0, y: -25, delay: 0});
     sectionOneTimeline.to(".line-two", {opacity: 0, y: -25,  delay: -0.09});
@@ -78,16 +74,14 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     .setTween(sectionOneTimeline)
     .addTo(controller);
-
     const changeBackgroundTimeline = gsap.timeline();
     changeBackgroundTimeline.to("html", {backgroundColor:"rgb(11,0,0)", ease:Power4.easeIn});
     const changeBackgroundScene = new ScrollMagic.Scene({
         triggerElement: ".section-two",
-        triggerHook: 0.999
+        triggerHook: 0.95
     })
     .setTween(changeBackgroundTimeline)
     .addTo(controller);
-
     const sectionTwoTimeline = gsap.timeline();
     sectionTwoTimeline.from(".column", {ease: "power1.out", y: 500, opacity: 0 });
     sectionTwoTimeline.from(".section-two-image-two", {y: 500, delay: -0.5})
@@ -98,10 +92,9 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     .setTween(sectionTwoTimeline)
     .addTo(controller);
-
     const sectionTwoLeave = gsap.timeline();
     sectionTwoLeave.to(".section-two-image-one", {y: -300, opacity: 0});
-    sectionTwoLeave.to(".section-two-image-two", {duration: 1, y: -600, opacity: 0, delay: -0.37});
+    sectionTwoLeave.to(".section-two-image-two", {y: -600, opacity: 0});
     sectionTwoLeave.from(".section-three-p", {opacity: 0, y: -25, stagger: {from: "start", amount: 1}, delay: -0.5})
     const sectionTwoLeaveScene = new ScrollMagic.Scene({
         triggerElement: ".section-three",
@@ -109,7 +102,6 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     .setTween(sectionTwoLeave)
     .addTo(controller);
-
     // SWIPER INIT
     var mySwiper = new Swiper('.swiper-container', { 
         direction: 'horizontal',
@@ -117,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function(){
         mousewheel: true,
         mousewheel: {
             forceToAxis: true,
-            invert: true
+            invert: false
         },
         spaceBetween: 0,
         speed: 900,

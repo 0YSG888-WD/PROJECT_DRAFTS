@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=El+Messiri:wght@700&display=swap');
-
-
+@import 'mediaQueries';
 * {
     margin: 0;
     padding: 0;
 }
-
 html {
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
     background-color: rgb(0,0,20);
-
     body {
         height: 100%;
         width: 100%;
@@ -19,19 +16,56 @@ html {
         font-style: italic;
         color: white;
     }
-
 }
-
-#canvas {
+.love {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(11, 11, 11);
+    z-index: 99;
+    h1 {
+		background-color: rgb(0, 0, 0);
+		color: transparent;
+		font-size: 15rem;
+		text-shadow: 
+			0.30rem 0.30rem 0.40rem rgb(16, 16, 16);
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+        background-clip: text;
+        cursor: default;
+        @include responsive(phone){
+            font-size: 4rem;
+        }
+    }
+}
+.love.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -99;
+    }
+}
+#canvas {
+    position: fixed;
     z-index: -1;
     opacity: 0.9;
+    width: 100vw;
+    height: 100vh;
+    @include responsive(phone){
+        width: 200px;
+    }
 }
-
 .frame {
     position: absolute;
-    top: 0;
+    top: 0.2vh;
     left: 1vw;
     color: white;
     font-size: 2rem;
@@ -41,12 +75,20 @@ html {
     opacity: 0.2;
     mix-blend-mode: exclusion;
     line-height: 1.5rem;
+    @include responsive(phone){
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+    }
     .up-and-down {
         font-size: 1.85rem;
+        @include responsive(phone){
+            font-size: 1.4rem;
+        }
     }
 }
-
 #container {
+    width: 100vw;
+    height: 100vh;
     section {
         display: flex;
         justify-content: center;
@@ -56,33 +98,36 @@ html {
         scroll-snap-align: start;
     }
 }
-
 .section-one {
     .swiper-container {
         height: 100vh;
         width: 100vw;
         z-index: 0;
-        mix-blend-mode: multiply;
+        mix-blend-mode: exclusion;
         .swiper-wrapper {
             .swiper-slide {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            .slide-two {
-                .slide-two-info {
-                    position: absolute;
-                    left: 3vw;
-                    bottom: 5vh;
-                    font-size: 1rem;
-                    opacity: 0.5;
+            .slide-one {
+                @include responsive(phone){
+                    img {
+                        height: 100vh;
+                    }
                 }
+            }
+            .slide-two {
                 .slide-two-image-one {
                     position: absolute;
                     left: 15vw;
                     height: 90%;
                     width: auto;
                     mix-blend-mode: exclusion;
+                    @include responsive(phone){
+                        position: static;
+                        height: 100vh;
+                    }
                 }
                 .slide-two-image-two {
                     position: absolute;
@@ -92,6 +137,9 @@ html {
                     width: auto;
                     text-align: right;
                     mix-blend-mode: difference;
+                    @include responsive(phone){
+                        display: none;
+                    }
                 }
             }
             .slide-three {
@@ -102,6 +150,10 @@ html {
                     width: auto;
                     height: 80%;
                     mix-blend-mode: difference;
+                    @include responsive(phone){
+                        position: static;
+                        height: 100vh;
+                    }
                 }
                 .slide-three-image-two {
                     position: absolute;
@@ -110,12 +162,14 @@ html {
                     width: auto;
                     height: 80%;
                     mix-blend-mode: difference;
+                    @include responsive(phone){
+                        display: none;
+                    }
                 }
             }
         }
     }
 }
-
 .section-one {
     img {
         display: inline-block;
@@ -156,12 +210,34 @@ html {
             font-size: 3.95rem;
             margin-top: 0.26rem;
         }
+        @include responsive(phone){
+            line-height: 0.8rem;
+            display: block;
+            text-align: center;
+            .line-one {
+                font-size: 1.5rem;
+            }
+            .line-two {
+                font-size: 1.58rem;
+            }
+            .line-three {
+                font-size: 2.22rem;
+                margin-top: 0.85rem;
+            }
+            .line-four {
+                font-size: 1.95rem;
+                margin-top: 0.9rem;
+            }
+        }
     }
 }
-
 .section-two {
+    @include responsive(phone){
+        width: 100vw;
+        overflow: hidden;
+    }
     .column {
-        width: 45vw;
+        width: 46vw;
         img {
             max-height: 100%;
             margin: -2.5rem 0;
@@ -173,23 +249,36 @@ html {
     .section-two-image-one {
         position: relative;
         left: 4vw;
+        @include responsive(phone){
+            display: none;
+        }
     }
     .section-two-image-two {
         position: relative;
         right: 2vw;
+        @include responsive(phone){
+            position: relative;
+            height: 100vh;
+            left: -70vw;
+        }
     }
 }
-
 .section-two-info, .section-three-info {
     font-size: 3rem;
     text-shadow: 3px 3px 5px rgba(0,0,20,0.6);
     opacity: 0.9;
     span {
         font-family: 'DM Serif Text', serif;
-        opacity: 0.8;
+        opacity: 0.9;
         color: royalblue;
         font-size: 3.4rem;
         text-shadow: 1px 1px 0px rgba(0,0,10,0.6);
+        @include responsive(tab-port){
+            font-size: 2.2rem;
+        }
+        @include responsive(phone){
+            font-size: 1.1rem;
+        }
     }
     a {
         text-decoration: none;
@@ -197,9 +286,22 @@ html {
         color: royalblue;
         transform: skew(15deg);
     }
+    @include responsive(tab-port){
+        font-size: 2rem;
+    }
+    @include responsive(phone){
+        font-size: 1rem;
+    }
 }
-
+@include responsive(phone){
+    .section-two-info {
+        position: relative;
+        right: 40vw;
+        top: 30vh;
+    }
+}
 .section-three-info {
     transform: skew(-15deg);
     font-style: normal;
+    mix-blend-mode: exclusion;
 }
