@@ -42,8 +42,14 @@ module.exports = {
                 test: /\.scss$/i,
                 use: [
                     "style-loader",
-                    "css-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            importLoaders: 1
+                        }
+                    },
                     "sass-loader",
+                    "postcss-loader"
                 ]
             },
             {
@@ -58,6 +64,6 @@ module.exports = {
     },
     plugins: [ 
         htmlPlugin, 
-        miniCssPlugin,
+        miniCssPlugin
     ]
 } 
