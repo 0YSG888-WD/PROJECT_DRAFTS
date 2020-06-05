@@ -264,14 +264,14 @@ html {
     }
 }
 .section-two-info, .section-three-info {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: 3px 3px 5px rgba(0,0,20,0.6);
     opacity: 0.9;
     span {
         font-family: 'DM Serif Text', serif;
         opacity: 0.9;
         color: royalblue;
-        font-size: 3.4rem;
+        font-size: 2.7rem;
         text-shadow: 1px 1px 0px rgba(0,0,10,0.6);
         @include responsive(tab-port){
             font-size: 2.2rem;
