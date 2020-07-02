@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Notable&family=Nova+Slim&family=Philosopher:ital,wght@1,400;1,700&family=Playball&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html {
+        background-color: black;
+    }
+    body {
+        display: block;
+        width: 100vw;
+        text-align: center;
+    }
+    header {
+    }
+    header > h1, p{
+        color: white;
+    } 
+    header > p > .ninethree {
+        font-family: 'Notable', sans-serif;
+        font-size: 6rem;
+    }
+    header > p > .driveart {
+        font-family: 'Nova Slim', cursive;
+        font-size: 3.5rem;
+    }
+
+    .content-padding {
+        display: block;
+        height: 5vh;
+    }
+
+    main {
+        display: block;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    main > .issue-number {
+        text-align: left;
+    }
+    #cover-image {
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+</style>
 <body>
-    <H1>NINE3</H1>
-    <p>AUTO-BIOGRAPHIES</p>
+    <header>
+        <p><span class="ninethree">NINE3</span><span class="driveart">DRIVEART</span></p>
+    </header>
+
+    <!-- <nav>
+        <ul>
+            <li>ARTICLES</li>
+            <li>ABOUT</li>
+        </ul>
+    </nav> -->
+
+    <span class="content-padding"></span>
+
+    <main>
+        <p class="issue-number">Issue 001.</p>
+    </main>
+
+    <img id="cover-image" src="/assests/cl55-three.png" alt="">
+
 </body>
 </html>
+
+<!-- 
+font-family: 'El Messiri', sans-serif;
+font-family: 'Notable', sans-serif;
+font-family: 'Nova Slim', cursive;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Playball', cursive;
+font-family: 'ZCOOL XiaoWei', serif; 
+-->
