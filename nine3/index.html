@@ -3,45 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Notable&family=Nova+Slim&family=Philosopher:ital,wght@1,400;1,700&family=Playball&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>NINE3DRIVEART</title>
     <link rel="stylesheet" href="/index.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="index.js"></script>
 </head>
-</style>
 <body>
+    <div class="swiper-container">
 
-    <main id="content">
+        <div class="swiper-wrapper">
 
-        <header>
-           <p class="title"><span class="ninethree">NINE3</span><span class="driveart">DRIVEART</span></p> 
-           <!-- <p class="tagline"> where you're going isn't always where you're headed. </p> -->
-        </header>
+            <div id="cover" class="swiper-slide">
+                <img id="cover-image" src="/assests/cl55-three.png" alt="">
+                <header>
+                    <p class="title"><span class="ninethree">NINE3</span><span class="driveart">DRIVEART</span></p> 
+                 </header>
+                 <div class="preview">
+                    <p> "...493 horsepower and 512 pound-feet of torque was exactly what I needed in my life at this moment."</p>
+                    <img src="/assests/preview-two.png" alt="">
+                    <img src="/assests/preview-one.jpg" alt="">
+                    <p class="sub-text">...continued on page 3</p>
+                 </div>
+            </div>
 
-        <div id="info">
-            <p class="sean">SEAN'S</p>
-            <p class="quarter-life">"QUARTERLIFE"</p>
-            <p class="crisis">CRISIS...</p>
+            <div id="page-one" class="swiper-slide">
+                <div class="page-one-container">
+                    <!-- <div class="image-one-container">
+                        <img class="page-one-img-one" src="/assests/cl55-two.png" alt="">
+                    </div>
+                    <div class="page-one-text-container">
+                        <p>My girlfriend of six, close to seven, years had just broken up with me.<br> 
+    
+                            April 1st. The date is easy to remember because my best-friend thought it was a joke, and I desperately wanted it to be some cruel prank.<br>
+                            
+                            “I don’t see a future with you- at least, not anymore.”<br></p>
+                    </div> -->
+                </div>
+            </div>
+
         </div>
 
-        <!-- <p class="issue-no">July 2020, Issue 001.</p> -->
+    </div>
+    
 
-    </main>
-
-    <img id="cover-image" src="/assests/cl55-three.png" alt="">
-
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            speed: 800,
+            direction: 'vertical',
+            mousewheel: true,
+        });
+    </script>
 </body>
 </html>
-
-<!-- MAYBE TURN THE ENTIRE FIRST VIEWPORT INTO THE "FIRST PAGE"
-
-HAVE TO MAKE THE FIRST PAGE POSITION ABSOLUTE
-
-USE OF SWIPER API
-
-EACH ARTICLE IS IT'S OWN SET OF PAGES
-
-THAT WAY WHEN THEY'RE "ARCHIVED" THE HTML CAN JUST BE COPY PASTED TO EACH INDIVIDUAL ISSUE 
-
-EACH MAIN ARTICLE IS THE INDEX LINK, AND WHEN ARCHIVED IT IS GIVEN IT'S OWN UNIQUE URL -->
