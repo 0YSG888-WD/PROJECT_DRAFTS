@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&family=Nova+Slim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 /* RESET */
 * {
     margin: 0;
@@ -12,13 +11,11 @@
 }
 body {
     width: 100vw;
-    overflow: hidden;
     background-color: rgb(16,16,16);
-    background-image: url(/assests/page-one-bgfade-two.png);
-    background-position: top;
+    background-image: url(/assests/bg-fade.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -450px;
+    background-size: contain;
+    background-position-y: -25px;
 }
 body > img {
     position: absolute;
@@ -27,19 +24,19 @@ body > img {
     width: auto;
     opacity: 0.4;
 }
-
 /* HEADER */
 header {
     position: absolute;
     width: 100vw;
     margin-top: -50px;
     z-index: 2;
+    mix-blend-mode: difference;
 }
 .title {
     color: white;
     text-align: center;
-    transform: skew(-15deg);
-    opacity: 0.6;
+    font-style: italic;
+    opacity: 0.75;
 }
 .title > .ninethree {
     font-family: 'Notable', sans-serif;
@@ -49,7 +46,6 @@ header {
     font-family: 'Nova Slim', cursive;
     font-size: 3rem;
 }
-
 /* SWIPER INIT */
 .swiper-container, .swiper-slide {
     height: 100vh;
@@ -57,14 +53,12 @@ header {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-
 /* COVER  */
-#cover-image {
-    position: absolute;
-    top: -100px;
-    height: auto;
-    width: 100vw;
-    z-index: -1;
+#cover {
+    background-image: url(/assests/page-one-bg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 #cover > .preview {
     position: absolute;
@@ -98,23 +92,23 @@ header {
     font-size: 14px;
     opacity: 0.8;
 }
-/* PAGE ONE */
-.page-one-container {
+/* PAGES ONE THREE FOUR */
+.page-one-container, .page-three-container, .page-four-container {
     height: 80vh;
     width: 70vw;
     margin: 0 auto;
     z-index: 5;
     margin-top: 140px;
-    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.6);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-.page-one-text-container {
+.page-one-text-container, .page-three-text-container, .page-four-text-container {
     justify-self: center;
     align-self: center;
 }
-.page-one-text-container > p {
+.page-one-text-container > p, .page-three-text-container > p, .page-four-text-container {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -122,7 +116,8 @@ header {
     line-height: 20px;
     font-weight: lighter;
 }
-.page-one-text-container > h1 {
+.page-one-text-container > h1, .page-four-text-container > h1 {
+    font-family: 'Times New Roman', Times, serif;
     color: white;
     display: block;
     text-align: center;
@@ -130,21 +125,18 @@ header {
     font-size: 48px;
     text-shadow: 4px 4px 1px rgba(65,105,225,1); 
 }
-.page-one-container > img {
+.page-one-container > img, .page-two-container > img, .page-three-container > img, .page-four-container > img {
     height: auto;
     width: 450px;
     justify-self: center;
     align-self: center;
-    box-shadow: 6px 6px 10px rgba(65,105,225,0.8); 
+    box-shadow: 6px 6px 18px rgba(65,105,225,0.6); 
 }
-
 /* PAGE TWO */
 #page-two {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.page-two-container {
 }
 .page-two-container > img {
     height: auto;
@@ -154,10 +146,18 @@ header {
 .page-two-container > p {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2px;
     line-height: 20px;
     font-weight: lighter;
-    text-shadow: 1px 1px 1px rgba(65,105,225,1); 
+    text-align: right;
+    font-style: italic;
+    opacity: 0.6;
+}
+/* PAGE FOUR */
+.page-four-text-container > h1 {
+    line-height: 40px;
+}
+.page-four-text-container > .p-right-align {
     text-align: right;
 }
