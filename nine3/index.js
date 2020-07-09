@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function(){
     var mySwiper = new Swiper('.swiper-container', {    
         speed: 800,
@@ -6,7 +5,20 @@ document.addEventListener("DOMContentLoaded", function(){
         mousewheel: true,
         parallax: true,
     });
-
+    let title = document.querySelector(".title");
+    title.addEventListener("click", function(){
+        console.log("WHITNEY IS BEAUTIFUL");
+        let nav = document.getElementById("navigation");
+        if( nav.style.display == "none" ){
+            nav.style.display = "block";
+            nav.style.animationName = "slide-in";
+        } else {
+            nav.style.animationName = "slide-out";
+            setTimeout(function(){
+                nav.style.display = "none";
+            }, 650);
+        }
+    });
     const controller = new ScrollMagic.Controller({});
     const pageOneTimeline = gsap.timeline();
     pageOneTimeline.from("#page-one", {opacity: 0, delay: 0.05});
