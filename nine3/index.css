@@ -157,7 +157,6 @@ nav > ul {
 .page-one-text-container, .page-three-text-container, .page-four-text-container {
     justify-self: center;
     align-self: center;
-    grid-area: text;
 }
 .page-one-text-container > p, .page-three-text-container > p, .page-four-text-container {
     color: white;
@@ -182,7 +181,6 @@ nav > ul {
     justify-self: center;
     align-self: center;
     box-shadow: 6px 6px 18px rgba(65,105,225,0.6); 
-    grid-area: image;
 }
 /* PAGE TWO */
 #page-two {
@@ -213,7 +211,49 @@ nav > ul {
     text-align: right;
 }
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1400px) {
+    .page-two-container > img {
+        height: auto;
+        width: 85vw;
+        margin-top: 120px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .page-one-container, .page-three-container, .page-four-container {
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .page-one-text-container > p, .page-three-text-container > p, .page-four-text-container {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .page-one-text-container > h1, .page-four-text-container > h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .page-one-container > img, .page-three-container > img, .page-four-container > img {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .title > .ninethree {
+        font-size: 10rem;
+    }
+    .title > .driveart {
+        display: none;
+    }
+    .page-one-container > img, .page-three-container > img, .page-four-container > img {
+        width: 350px;
+    }
+    .page-one-text-container > p, .page-three-text-container > p, .page-four-text-container {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 16px;
+    }
+}
+@media only screen and (max-width: 700px) {
     body {
         width: 100vw;
         background-color: rgb(16,16,16);
