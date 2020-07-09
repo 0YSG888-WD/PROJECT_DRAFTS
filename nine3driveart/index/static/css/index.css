@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Nova+Slim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@keyframes slide-in {
+    from {opacity: 0; transform: translateY(-25px);}
+    to {opacity: 0.8}
+}
+@keyframes slide-out {
+    to {opacity: 0; transform: translateY(-25px);}
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+*:hover {
+    cursor: default;
+}
+body {
+    width: 100vw;
+    background-color: rgb(16,16,16);
+    background-image: url(/assests/bg-fade.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -25px;
+    overflow: hidden;
+}
+/* HEADER */
+header {
+    position: absolute;
+    width: 100vw;
+    margin-top: -50px;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
+.title {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.75;
+}
+.title > .ninethree {
+    font-family: 'Notable', sans-serif;
+    font-size: 10rem;
+    cursor: pointer;
+}
+.title > .driveart {
+    font-family: 'Nova Slim', cursive;
+    font-size: 3rem;
+    cursor: pointer;
+}
+/* NAV */
+nav {
+    margin-top: -15px;
+    opacity: 0.8;
+    animation-duration: 1s;
+    transition-timing-function: ease;
+}
+nav > ul {
+    text-align: center;
+    padding: 5px 0;
+}
+.nav-container {
+    display: inline;
+    padding-top: 8px;
+    padding-bottom: 5px; 
+    border: 1px solid white;
+}
+.nav-container > a {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+.nav-container > a:hover {
+    cursor: pointer;
+    background-color: white;
+}
+.nav-container > a > li {
+    display: inline;
+    mix-blend-mode: exclusion;
+}
+.nav-container > a > li:hover {
+    cursor: pointer;
+}
+/* SWIPER INIT */
+.swiper-container, .swiper-slide {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* COVER  */
+#cover {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#cover > .preview-container {
+    position: absolute;
+    bottom: 30px;
+    left: 7vw;
+}
+#cover > .preview-container > .preview {
+    width: 336px;
+    transition: 0.5s;
+}
+#cover > .preview-container > .preview:hover {
+    opacity: 1;
+}
+.preview > p {
+    margin-bottom: 7px;
+    text-shadow: 1px 1px 0.5px black;
+    text-align: justify;
+    opacity: 0.9;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: lighter;
+}
+.preview > img {
+    width: 166px;
+    opacity: 0.9;
+}
+.preview > .sub-text {
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.8;
+}
+/* PAGES ONE THREE FOUR */
+.page-one-container, .page-three-container, .page-four-container {
+    height: 80vh;
+    width: 70vw;
+    margin: 0 auto;
+    z-index: 5;
+    margin-top: 140px;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.page-one-text-container, .page-three-text-container, .page-four-text-container {
+    justify-self: center;
+    align-self: center;
+}
+.page-one-text-container > p, .page-three-text-container > p, .page-four-text-container {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: lighter;
+}
+.page-one-text-container > h1, .page-four-text-container > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 48px;
+    text-shadow: 4px 4px 1px rgba(65,105,225,1); 
+}
+.page-one-container > img, .page-two-container > img, .page-three-container > img, .page-four-container > img {
+    height: auto;
+    width: 450px;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 6px 6px 18px rgba(65,105,225,0.6); 
+}
+/* PAGE TWO */
+#page-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-two-container > img {
+    height: auto;
+    width: 65vw;
+    margin-top: 120px;
+}
+.page-two-container > p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: lighter;
+    text-align: right;
+    font-style: italic;
+}
+/* PAGE FOUR */
+.page-four-text-container > h1 {
+    line-height: 40px;
+}
+.page-four-text-container > .p-right-align {
+    text-align: right;
+}
+MEDIA QUERIES
+@media only screen and (max-width: 1400px) {
+    .page-two-container > img {
+        height: auto;
+        width: 85vw;
+        margin-top: 120px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .page-one-container, .page-three-container, .page-four-container {
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .page-one-text-container > p, .page-three-text-container > p, .page-four-text-container {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .page-one-text-container > h1, .page-four-text-container > h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .page-one-container > img, .page-three-container > img, .page-four-container > img {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .title > .ninethree {
+        font-size: 10rem;
+    }
+    .title > .driveart {
+        display: none;
+    }
+    .page-one-container > img, .page-three-container > img, .page-four-container > img {
+        width: 350px;
+    }
+    .page-one-text-container > p, .page-three-text-container > p, .page-four-text-container {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 16px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    body {
+        width: 100vw;
+        background-color: rgb(16,16,16);
+        background-image: url(/assests/bg-fade-media.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+    }
+    header {
+        margin-top: -10px;
+    }
+    nav {
+        margin-top: -10px;
+    }
+    .nav-container {
+        padding: 0 5px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .nav-container > a {
+        font-size: 12px;
+        padding: 0 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .title > .ninethree {
+        font-size: 6rem;
+    }
+    .title > .driveart {
+        display: none;
+    }
+    #cover > .preview-container {
+        left: 0;
+        top: 135px;
+        width: 100vw;
+    }
+    #cover > .preview-container > .preview {
+        width: 254px;
+        margin: 0 auto;
+    }
+    .preview > p {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .preview > img {
+        width: 125px;
+    }
+    .preview > .sub-text {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    #page-one, #page-three, #page-four {
+        background-size: cover;
+        background-position: center;
+    }
+    #page-one {
+        background-image: url(/assests/cl55-one.png);
+    }
+    #page-three {
+        background-image: url(/assests/cl55-two.png);
+        background-position: right;
+    }
+    #page-four {
+        background-image: url(/assests/cl55-four.png);
+        background-position: left;
+    }
+    .page-one-container, .page-three-container, .page-four-container {
+        display: flex;
+        width: 90vw;
+        margin-top: 120px;
+    }
+    .page-one-text-container > p, .page-three-text-container > p, .page-four-text-container {
+        color: white;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        line-height: 14px;
+        text-shadow: 1px 1px 0 rgb(100,100,125), 1.3px 1.3px 0 black;
+    }
+    .page-one-text-container > h1, .page-four-text-container > h1 {
+        font-size: 28px;
+        text-shadow: 3px 3px 1px rgba(65,105,225,1); 
+    }
+    .page-one-container > img, .page-three-container > img, .page-four-container > img {
+        display: none;
+    }
+    .page-two-container > img {
+        height: auto;
+        width: 90vw;
+    }
+    .page-two-container > p {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 24px;
+        text-shadow: 4px 4px 1px rgba(65,105,225,1); 
+        font-weight: bold;
+        width: 90vw;
+        opacity: 1;
+    }
+}
